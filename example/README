@@ -1,0 +1,16 @@
+# 2018-08-10 14:20:34 CunliangGeng
+
+job_T37A: command to run BLAST and generate PSSM files. We set 3 rounds of BLAST searching in this job.
+
+## Outputs:
+
+T37.A.pssm.3: 3rd round PSSM, which is the file we need!
+T37.A.pssm.2: 2nd round PSSM. If 3rd round does not exist, then use this file as final PSSM.
+T37.A.pssm.1: 1st round PSSM. If 2nd round does not exist, then use this file as final PSSM.
+
+T37.A.cptpssm.1: 1st round checkpoint PSSM file.
+T37.A.cptpssm.2
+T37.A.cptpssm.3
+
+T37.A.searchstrategy: BLAST search strategy file.
+T37.A.sa: BLAST search or sequence alignment results.
