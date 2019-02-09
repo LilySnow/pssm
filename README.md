@@ -1,1 +1,2 @@
-Use psiblast to calculate PSSM and other relevant oprations.
+# pssm
+Tools for calculating PSSM using psiblast and for manipulating PSSMs.
