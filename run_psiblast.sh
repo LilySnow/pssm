@@ -2,7 +2,7 @@
 # 2018-02-26 14:08:54 CunliangGeng
 # Li Xue
 
-if [[ $# -ne 3 ]]; then
+if [[ $# < 3 ]]; then
     echo -e  "Usage:\n${0}  <input_fasta_file>  <output_pssmfile> <output_format_index> [num_threads]"
     echo -e  "  output_format_index: recommend 7(Tabular) or 13(json)."
     echo -e  "  path_fasta, path_output: default is current working directory.\n"
@@ -106,7 +106,11 @@ $psiblast\
  -num_threads $num_threads
 "
 
-
+echo
+echo "Command to use:"
 echo $command
+echo
+
+echo "Now you can run this command to generate pssm!"
 
 
